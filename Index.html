@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>文字数カウンター</title>
+</head>
+
+<body>
+
+<h1>文字数カウンター</h1>
+
+<textarea id="text" rows="10" cols="40"></textarea>
+
+<p id="result">0文字</p>
+
+<script>
+
+let text = document.getElementById("text")
+let result = document.getElementById("result")
+
+text.addEventListener("input", () => {
+result.textContent = text.value.length + "文字"
+})
+
+</script>
+
+</body>
+</html>
